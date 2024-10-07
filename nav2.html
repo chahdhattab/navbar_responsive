@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav2.css">
+    <title>nav</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">logo</a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <img class="menu" src="more.png" alt="menu">
+    </nav>
+    <header></header>
+</body>
+<script>
+    const menu=document.querySelector(".menu")
+    const navlinks=document.querySelector(".nav-links")
+    menu.addEventListener('click',()=>(navlinks.classList.toggle('mobile-menu')))
+</script>
+</html>

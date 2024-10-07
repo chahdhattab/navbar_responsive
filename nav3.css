@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: url(pexels-eberhardgross-629162.jpg);
+    background-size: cover;
+    background-position: center;
+}
+li{
+    list-style: none;
+
+
+}
+a{
+    text-decoration: none;
+    color:#26261A;  
+    font-size: 1.2em;
+}
+a:hover{
+    color: #615e4c;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+    background-color: #7372634d;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+.navbar .logo{
+    font-size: 1.8em;
+    font-weight: 600;
+}
+.navbar .links{
+    font-weight: 500;
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+.navbar .menu{
+    cursor: pointer;
+    display : none;
+}
+.buttons{
+    display: flex;
+    gap:15px;
+}
+.subscribe-button,.login-button{
+    background-color: #2C2C1C;
+    color: #BBB8BC;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid #2C2C1C;
+}
+.subscribe-button:hover,.login-button:hover{
+    color: #f0ecf1;
+}
+.subscribe-button{
+    background-color: #2c2c1c57;
+    border: 2px solid #2C2C1C;
+    color: #2C2C1C;
+}
+.subscribe-button:hover{
+    background-color:#BBB8BC ;
+}
+/*----menu-respo1----*/
+.menu-respo{
+    display: none;
+    height: 0;
+    right: -100rem;
+    position: absolute;
+    top:80px;
+    background-color:#bbb8bcbc;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    overflow: hidden;
+    align-items: center;
+    transition: height 0.5s ease, right 0.5s ease;
+    border-radius: 5px;
+}
+    
+
+.menu-respo.open{
+height: 300px;
+right: 2rem;
+
+}
+.menu-respo li{
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+}
+.menu-buttons{
+    display:flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    header{
+        background: none;
+    }
+    .navbar .menu{
+        display: block;
+    }
+    .navbar .buttons,.navbar .links{
+        display: none;
+    }
+    .menu-respo{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
